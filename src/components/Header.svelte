@@ -7,7 +7,7 @@
     <a
       href="https://www.startpage.com/do/dsearch?query=Lutz+V%C3%B6ssing"
       id="nav__lutz"
-      target="_blank"><div>ルッツ・ヴォエシング</div></a
+      target="_blank"><div>よひちる</div></a
     >
     <Link to="/"><div>Start</div></Link>
     <Link to="texte"><div>Texte</div></Link>
@@ -16,6 +16,12 @@
 </header>
 
 <style>
+  @font-face {
+    font-family: "RampartOne";
+    src: url("/fonts/RampartOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+
   @font-face {
     font-family: "Digital";
     src: url("/fonts/EightBit\ Atari-Digital.ttf") format("truetype");
@@ -40,7 +46,7 @@
   header nav {
     height: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: minmax(0, 1fr);
     gap: 5px;
     align-items: center;
@@ -70,12 +76,17 @@
     justify-content: space-around;
   }
   header nav #nav__lutz {
+    font-family: 'RampartOne';
     border: 2px solid var(--tertiary);
-    color: var(--quaternary);
+    color: rgb(143, 16, 16);
+    text-decoration: none;
   }
 
-  header nav #nav__lutz div {
-    border: 0px;
+  header nav #nav__lutz div {  
+    font-size: calc(5em / 3);
+    border: 1px solid var(--tertiary);
+    padding: 0;
+    word-break: keep-all;
   }
 
   @media (max-width: 640px) {

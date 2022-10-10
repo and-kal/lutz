@@ -1,11 +1,11 @@
 <script>
 </script>
     <img src="/lutz-foto.jpg" alt="Lutz lesend">
-    <div>mailto: </div>
+    <div>mailto:lutz@gott.info</div>
 <style>
     img[alt="Lutz lesend"] {
-        max-width: 300px;
+        max-width: 99%;
         height: auto;
-        border: 2px solid var(--quaternary)
+        border: 3px solid var(--quaternary)
     }
 </style>
