@@ -2,7 +2,8 @@
   import Header from "./components/Header.svelte";
   import Footer from "./components/Footer.svelte";
 
-  import About from "./pages/About.svelte";
+  import Aal from "./pages/Aal.svelte";
+  import Bio from "./pages/Bio.svelte";
   import Kontakt from "./pages/Kontakt.svelte";
   import Texte from "./pages/Texte.svelte";
 
@@ -15,7 +16,8 @@
   <main>
     <div id="checkgrid" />
     <h1><span>Lutz Vössing</span></h1>
-    <Route path="/" component="{About}" />
+    <Route path="/" component="{Aal}" />
+    <Route path="bio" component="{Bio}" />
     <Route path="kontakt" component="{Kontakt}" />
     <Route path="texte" component="{Texte}" />
   </main>
@@ -85,7 +87,7 @@
     main {
       max-width: 500px;
       margin: auto;
-      padding: 4em;
+      padding: 2.5em;
     }
     h1 {
       text-align: left;

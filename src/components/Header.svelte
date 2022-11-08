@@ -9,7 +9,7 @@
       id="nav__lutz"
       target="_blank"><div /></a
     >
-    <Link to="/">
+    <Link to="bio">
       <div>
         Bio
       </div>

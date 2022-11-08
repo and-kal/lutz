@@ -3,8 +3,6 @@
 
 <div class="contentbox">
   <h2><span>Bio</span></h2>
-  <img src="/lutz-foto.jpg" alt="Lutz lesend" />
-
   <div class="bio">
     Geboren 1990 in Höxter, Kurzaufenthalt in Mittelsachsen, Studium der
     Philosophie und Literaturwissenschaft in Wien und Berlin, lebt und arbeitet
@@ -17,10 +15,7 @@
 </div>
 
 <style>
-    img[alt="Lutz lesend"] {
-    max-width: 99%;
-    height: auto;
-    border: 3px solid var(--quaternary);
+  .bio {
     margin: 1rem 0;
   }
 </style>

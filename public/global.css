@@ -23,7 +23,7 @@ body {
 }
 
 .contentbox {
-  z-index: 999;
+  z-index: 2;
   padding: 1rem;
   margin: 2rem 0;
   background-color: var(--primary);
