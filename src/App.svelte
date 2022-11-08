@@ -1,10 +1,12 @@
 <script>
   import Header from "./components/Header.svelte";
+  import Footer from "./components/Footer.svelte";
+
   import About from "./pages/About.svelte";
   import Kontakt from "./pages/Kontakt.svelte";
   import Texte from "./pages/Texte.svelte";
 
-  import { Router, Route } from "svelte-routing";
+  import { Router, Route } from "svelte-navigator";
 </script>
 
 <Router>
@@ -13,10 +15,13 @@
   <main>
     <div id="checkgrid" />
     <h1><span>Lutz Vössing</span></h1>
-    <Route path="/"><div class="contentbox"><About /></div></Route>
-    <Route path="kontakt"><div class="contentbox"><Kontakt /></div></Route>
-    <Route path="texte"><div class="contentbox"><Texte /></div></Route>
+    <Route path="/" component="{About}" />
+    <Route path="kontakt" component="{Kontakt}" />
+    <Route path="texte" component="{Texte}" />
   </main>
+
+  <Footer />
+
 </Router>
 
 <style>
@@ -65,7 +70,7 @@
   h1 {
     margin-top: 2rem;
     font-size: 2rem;
-    text-align: center;
+    /* text-align: center; */
     color: var(--primary);
   }
 
@@ -76,19 +81,10 @@
     box-shadow: 6px 6px 0 0px var(--secondary);
   }
 
-  .contentbox {
-    z-index: 999;
-    padding: 1rem;
-    margin: 2rem 0;
-    background-color: var(--primary);
-    border: 2px solid var(--tertiary);
-    box-shadow: 6px 6px 0 0px var(--secondary);
-  }
-
   @media (min-width: 640px) {
     main {
       max-width: 500px;
-      margin: 0;
+      margin: auto;
       padding: 4em;
     }
     h1 {

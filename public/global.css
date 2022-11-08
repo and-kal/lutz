@@ -5,64 +5,87 @@
   --quaternary: #bababa;
 }
 
-html, body {
-	background-image: url(/grid-elem.jpg);
-	background-repeat: repeat;
-	/* background: linear-gradient(135deg, var(--black) 0%, rgba(3,5,27,1) 73%, rgb(7, 30, 34) 100%); */
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
+html,
+body {
+  background-image: url(/grid-elem.jpg);
+  background-repeat: repeat;
+  /* background: linear-gradient(135deg, var(--black) 0%, rgba(3,5,27,1) 73%, rgb(7, 30, 34) 100%); */
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 
 body {
-	margin: 0;
-	box-sizing: border-box;
-	color: var(--secondary);
-	border: 2px solid var(--primary);
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--secondary);
+  border: 2px solid var(--primary);
+}
+
+.contentbox {
+  z-index: 999;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: var(--primary);
+  border: 2px solid var(--tertiary);
+  box-shadow: 2px 2px 0 #000, 4px 4px 0 #2e2e2e, 6px 6px 0 #585858,
+    8px 8px 0 #848484, 10px 10px 0 #a4a4a4, 12px 12px 0 #bdbdbd;
 }
 
 a {
-	color: var(--tertiary);
-	text-decoration: underline;
+  color: var(--tertiary);
+  text-decoration: underline;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 label {
-	display: block;
+  display: block;
 }
 
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	-webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 input:disabled {
-	color: #ccc;
+  color: #ccc;
 }
 
 button {
-	color: var(--secondary);
-	background-color: #f4f4f4;
-	outline: none;
+  color: var(--secondary);
+  background-color: #f4f4f4;
+  outline: none;
 }
 
 button:disabled {
-	color: var(--quaternary);
+  color: var(--quaternary);
 }
 
 button:not(:disabled):active {
-	background-color: var(--primary);
+  background-color: var(--primary);
 }
 
 button:focus {
-	border-color: var(--tertiary);
+  border-color: var(--tertiary);
+}
+
+h2 {
+  margin: 0;
+  color: var(--tertiary);
+  font-size: 1.75rem;
+}
+h2 span {
+  border-bottom: 1px solid var(--tertiary);
 }
