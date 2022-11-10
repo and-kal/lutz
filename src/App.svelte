@@ -1,8 +1,8 @@
 <script>
-  import { navOptions } from "./components/Nav.svelte"; // import application navigation
+  import { navOptions } from "./components/Nav.svelte";
+  import { fade } from "svelte/transition";
   let pgSelected = "landing";
 
-  // change the selected component (the event.originalTarget.id is not accessible in Chrome so switched to event.srcElement.id)
   function changeComponent(event) {
     pgSelected = event.srcElement.id;
     console.log(pgSelected);
@@ -10,7 +10,7 @@
 </script>
 
 <header>
-  <nav class={pgSelected == "landing" ? "landing" : "not-landing"}>
+  <nav class={pgSelected == "landing" ? "landing" : ""}>
     <div
       style={pgSelected == "landing" ? "display:none" : ""}
       on:click={changeComponent}
@@ -42,14 +42,14 @@
   </nav>
 </header>
 
-  <main>
-    <div id="checkgrid" />
-    <svelte:component this={navOptions[pgSelected]} />
-  </main>
+<main class={pgSelected == "landing" ? "landing" : ""}>
+  <div id="checkgrid" />
+  <svelte:component this={navOptions[pgSelected]} />
+</main>
 
 <style>
-/* header related */
-@font-face {
+  /* header related */
+  @font-face {
     font-family: "Digital";
     src: url("/fonts/EightBit\ Atari-Digital.ttf") format("truetype");
     font-weight: normal;
@@ -67,7 +67,7 @@
     font-size: 1.5rem;
     border-bottom: 2px solid var(--tertiary);
     font-family: "Digital", -apple-system, BlinkMacSystemFont, Segoe UI,
-    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   }
 
   header nav {
@@ -127,9 +127,9 @@
     border-color: var(--primary);
     color: var(--primary);
     background-color: var(--secondary);
-    transition: outline-color 0.5s, border-color 0.5s, background-color 0.5s, color 0.5s;
+    transition: outline-color 0.5s, border-color 0.5s, background-color 0.5s,
+      color 0.5s;
   }
-
 
   @media (max-width: 800px) {
     header nav {
@@ -195,10 +195,10 @@
   }
 
   @media (min-width: 640px) {
-    main {
-      max-width: 500px;
+    main:not(.landing) {
       margin: auto;
       padding: 2.5em;
+      max-width: 500px;
     }
-  }  
+  }
 </style>
