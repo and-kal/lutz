@@ -1,6 +1,8 @@
 <script>
+    import { fade } from 'svelte/transition';
 </script>
-<div class="contentbox">
+
+<div class="contentbox" in:fade="{{ duration: 500 }}">
 <h2><span>Texte (Auswahl)</span></h2>
 <ul>
   <li>

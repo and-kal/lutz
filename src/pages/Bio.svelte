@@ -1,7 +1,11 @@
 <script>
+  import Hero from "../components/Hero.svelte";
+  import { fade } from 'svelte/transition';
+
 </script>
 
-<div class="contentbox">
+<Hero />
+  <div class="contentbox" in:fade="{{ duration: 500 }}">
   <h2><span>Bio</span></h2>
   <div class="bio">
     Geboren 1990 in Höxter, Kurzaufenthalt in Mittelsachsen, Studium der
