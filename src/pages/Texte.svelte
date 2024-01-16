@@ -121,8 +121,38 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        „Berichte aus einer Schattenwelt” – Interview mit Frédéric Valin
+        »Berichte aus einer Schattenwelt« – Interview mit Frédéric Valin
       </a>
+    </li>
+
+    <li>
+      <a
+        href="https://skug.at/vom-altneuland-ins-niemandsland/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Vom »Altneuland« ins Niemandsland – Über Tomer Dotan-Dreyfus'
+        »Birobidschan« und Michael Chabons »Die Vereinigung jiddischer
+        Polizisten«
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://skug.at/translations-of-forgotten-dreams/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Translations of forgotten dreams – Interview mit Lauri Ainala
+        (Paavoharju)
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://skug.at/peter-broetzmann-%e2%80%a0"
+        target="_blank"
+        rel="noopener noreferrer">Nachruf auf Peter Brötzmann</a
+      >
     </li>
   </ul>
 </div>
