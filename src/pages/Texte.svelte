@@ -154,6 +154,25 @@
         rel="noopener noreferrer">Nachruf auf Peter Brötzmann</a
       >
     </li>
+    <li>
+      <a
+        href="https://skug.at/retrogott-ueber-identitaet-und-trauern/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Retrogott über Identität und Trauern - Interview zu »Spur und Abweg«
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://skug.at/das-leben-entscheidet-ueber-das-leben/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Das Leben entscheidet über das Leben - Über Benjamin Koppels »Annas
+        Lied«
+      </a>
+    </li>
   </ul>
 </div>
 
