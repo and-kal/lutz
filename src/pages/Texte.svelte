@@ -173,6 +173,16 @@
         Lied«
       </a>
     </li>
+    <li>
+      <a
+        href=" https://skug.at/theres-nothing-fascinating-about-serial-killers/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        »There’s nothing fascinating about serial killers« - Interview mit Lavie
+        Tidhar
+      </a>
+    </li>
   </ul>
 </div>
 
